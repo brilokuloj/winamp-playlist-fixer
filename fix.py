@@ -23,5 +23,5 @@ for child in root:
     
     for line in input_read:
         if "#EXT" not in line:
-            x = line.replace(directory, "")
+            x = line.replace(directory, "").replace("\\", "/")
             output.write(x + "\n")
